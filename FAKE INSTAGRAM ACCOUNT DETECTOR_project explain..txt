@@ -1,0 +1,135 @@
+FAKE INSTAGRAM ACCOUNT DETECTOR
+
+---
+**UNDERSTANDING THE PROBLEM**
+
+
+
+* This project aim is to build and train a deep neural network model to detect fake or spam Instagram accounts.
+*  These days spam accounts have become a major problem in in all the social media platforms.
+
+* Many users are creating fake accounts to create an illusion of having many followers to thier personal accounts.
+
+
+*  Fake accounts are being created to sell fake products and services. 
+*  They are also being used to impersonate other account users from common people to celebrities in order to influence, criticize, hurt feelings and reputation.
+
+
+
+*  There are few key input features which we considered to determine if the account is fake or not.
+
+*   THE *INPUT FEATURES* ARE:
+
+
+1.   **PROFILE PICTURE** - The user has profile picture or not.
+2.   **NUMS/LENGTH USERNAM**E - The ratio of number of numerical chars in username to its length.
+3.  **FULLNAME WORDS** - Full name in word tokens
+4.   **NAME/LENGTH OF FULL NAME** - The ratio of number of numerical characters in full name to its length.
+5.   **NAME == USERNAME** - Are username and full name literally the same?
+6.   **DESCRIPTION LENGTH** - Bio length in characters.
+7.   **EXTERNAL URL** - Has external URL or not.
+8.   **PRIVATE** - Private or not.
+9.   **POSTS** - Number of posts.
+10.  **FOLLOWERS** - Number of followers.
+11.  **FOLLOWS** - Number of follows.
+
+
+**TRAINED DETECTOR MODEL:**
+
+---
+This model is trained such that it considers the above given features and determines whether a particular account is fake or not. By resulting the output as either 0 or 1 meaning TRUSTED or FAKE respectively. Our intention is to make this software capable of thinking like a human, based on the data it is given and results in maximum probability of success.
+
+**HOW TO RUN THE CODE**
+
+This is an executable [*Jupyter notebook* or,*Google collab*]
+
+
+**Working**
+
+\\TASK 1::
+
+LOADING LIBRAIRES
+#installing tensorflow version 2.0
+#importing all the required libraries
+#styling purpose //optional
+#Load the training and testing datasets
+#the dataset which will be used for training purpose (576 records)
+#the dataset which will be used for testing purpose (120 records)
+
+\\TASK 2::
+PERFORMING EXPLORATORY DATA ANALYSIS
+
+Performing Exploratory Data Anlaysis For "Training Dataset"**
+#Statistical summary of the dataframe
+#Check if null values exist
+#Number of unique values in the profile pic column
+#Number of fake and real accounts
+#Number of accounts having an external URL
+#Number of accounts having description length over 50
+
+Performing Exploratory Data Anlaysis For "Testing Dataset"**
+
+\\TASK 3::
+PERFROMING DATA VISUALIZATION
+#Vislualizing the number of fake and real accounts (using seaborn library)
+#Visualizing the private column
+#Visualizing the profile pic feature
+#Visualizing the length of usernames(Histogram)
+#Correlation heatmap
+
+\\TASK  4::
+PREPARING THE DATA TO FEED THE MODEL
+
+#Preparing inputs for the model (Dropping the fake column from both training and testing dataset)
+#Preparing the outputs (Takin only the fake column into consideration.)
+#Scaling the data before training the model (Normalize the data)
+#Having a look at the shapes after scaling the data
+#Percentage of Training data
+
+\\TASK 5::
+
+UNDERSTANDING THEORY AND INTUITION BEHIND NEURAL NETWORKS
+
+
+\\TASK 6::
+BUILD A SIMPLE DEEP LEARNING MODEL
+#Building the main model***
+
+\\TASK 7::
+ASSESSING THE PRERFORMANCE OF THE MODEL
+
+
+
+INFERENCES AND CONCLUSION:
+Thus, we have analyzed the dataset and obtained a fairly accurate predictive model using Neural networks.
+
+* The model is hence trained to detect fake accounts in instagram based on the considered features.
+
+* We achieved 95 percent accuracy in detecting the fake accounts by training the model using  datasets (from train.csv) . We have checked whether the model has reached the ability to detect an account is fake or not by inputting different set of data values (test.csv file) which consisted 120 account details. 
+
+* The model predicted true values for 106 accounts and predicted false values for 14 accounts out of 120 accounts.
+
+REFERENCES :
+Check out the following resources to learn more about the tools and libraries used in this notebook:
+
+
+
+
+* Pandas user guide: https://pandas.pydata.org/docs/user_guide/index.html
+
+* Matplotlib user guide: https://matplotlib.org/3.3.1/users/index.html
+
+* Seaborn user guide & tutorial: https://seaborn.pydata.org/tutorial.html
+
+* Tensorflow user guide : https://www.tensorflow.org/guide
+
+* Tenorflow Playground : https://playground.tensorflow.org
+
+* Neural Networks : https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
+
+
+
+
+
+
+
