@@ -1,0 +1,35 @@
+Pandas is a tool that helps you work with big lists of information,
+
+matplotlib' to make pictures, like graphs or charts, 
+
+Numpy helps you work with numbers, especially when you have a lot of them!
+
+Seaborn is like an artist that helps you make beautiful graphs and pictures from data,
+
+ensorFlow is like a brain for the computer that helps it learn things, like how we learn to recognize animals or solve puzzles
+
+Keras is like a set of building blocks that help you create and train smart models (like teaching a computer to recognize faces or predict the weather) more quickly and easily.
+
+Dense: It's like a regular layer where every input is connected to every output.
+
+Activation: This layer tells the model how to make decisions. It’s like giving instructions on how to turn inputs into meaningful outputs,
+
+Dropout: This layer helps make your model smarter by temporarily "turning off" some connections while it’s learning. It’s like giving the model a challenge to make sure it doesn’t depend too much on certain parts and can learn better overall.
+
+Adam is an optimizer, which is like a coach for your model. It helps the model figure out the best way to learn from its mistakes and improve with each try
+
+Accuracy is like a scorekeeper that measures how many correct answers the model gives.
+
+Metrics are like scorecards that help you figure out how good your model is at its job. They tell you things like how accurate your model is, how many mistakes it made, or how well it handled predictions.
+
+Accuracy is a specific type of metric
+
+LabelEncoder is used to convert things like words or categories into numbers that the computer can understand
+
+classification_report: This gives you a detailed report on how well your model performed.
+
+accuracy_score: This tells you how accurate your model is, or how many correct predictions it made out of all the predictions.
+
+roc_curve: This creates a graph called the Receiver Operating Characteristic (ROC) curve. It helps you understand how well your model distinguishes between two classes (like positive and negative) by showing the balance between true positive and false positive rates.
+
+confusion_matrix: This is a table that shows where your model made correct and incorrect predictions. It breaks down predictions into categories like true positives, false positives, true negatives, and false negatives, making it easy to see where the model did well or struggled.
